@@ -27,12 +27,16 @@ last_updated: "2025-11-11"
 ---
 
 # The `genre` resource
+{: .no_toc }
 
 ```shell
 /genres
 ```
 
 The `genre` resource represents the genre of a movie registered in the ReelNow database.
+
+1. TOC
+{:toc}
 
 ## Properties
 

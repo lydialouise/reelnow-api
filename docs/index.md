@@ -29,7 +29,7 @@ last_updated: "2025-11-12"
 
 **The smarter way to track movie releases.**
 
-Stay in sync with the big screen using the ReelNow API. Track upcoming movie releases, including their associated genres, showtimes, theaters, and ratings. Build experiences that keep your movie fans informed, theaters up to date, and entertainment apps fresh.
+Stay in sync with the big screen using the ReelNow API. Track upcoming movie releases, including their associated genres, showtimes, theatres, and ratings. Build experiences that keep your movie fans informed, theatres up to date, and entertainment apps fresh.
 
 ## Get started
 
@@ -41,7 +41,7 @@ Get set up and learn how to track upcoming movies, find showtimes, and build ent
   
 Ready for a close-up? Get up and running in 10 minutes or less.
 
-[Set up your environment](./api/before-you-start.md){: .btn .btn-outline }
+[Set up your environment](./api/setting-up-your-environment.md){: .btn .btn-outline }
 
 ### Tutorials
 
@@ -56,16 +56,16 @@ Enhance your database with rich movie data to power personalized recommendations
 
 #### Find local showtimes
 
-Don’t miss the premiere. Find `/showtimes` to see what's playing at a theater near you.
+Don’t miss the premiere. Find `/showtimes` to see what's playing at a theatre near you.
 Power local showtime listings, help users plan movie nights, and keep your app current with all screenings.
 
 [Find local showtimes](./tutorials/get-local-showtimes.md){: .btn .btn-outline }
 
-#### Get theater information
+#### Get theatre information
 
-Scout your cinema. Get location and contact information for all theaters to guide audiences to the perfect screen.
+Scout your cinema. Get location and contact information for all theatres to guide audiences to the perfect screen.
 
-[Get theater info](./api/tutorials/get-theater-info.md){: .btn .btn-outline }
+[Get theatre info](./api/tutorials/get-theatre-info.md){: .btn .btn-outline }
 
 #### Filter movies by audience
 
@@ -83,7 +83,7 @@ For inspiration on how others are using ReelNow to power movie dashboards, ticke
 
 ---
 
-From advertising upcoming releases to integrating showtimes with theater websites, **explore case studies→** to discover how developers use ReelNow to keep movie lovers informed.
+From advertising upcoming releases to integrating showtimes with theatre websites, **explore case studies→** to discover how developers use ReelNow to keep movie lovers informed.
 
 ## Get support
 

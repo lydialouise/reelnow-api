@@ -1,58 +1,192 @@
 {
   "movies": [
     {
-      "title": "Tron: Ares",
-      "releaseDate": "2025-10-10",
-      "genreId": 1,
+      "title": "John Tucker Must Die",
+      "releaseDate": "2006-07-28",
+      "genreId": 3,
       "rating": "PG-13",
-      "runtimeMinutes": 119,
-      "id": 1
+      "runtimeMinutes": 90,
+      "status": "archived",
+      "isInTheatres": false,
+      "id": 3
     },
     {
       "title": "Black Phone 2",
       "releaseDate": "2025-10-17",
-      "genreId": 2,
+      "genreId": 6,
       "rating": "R",
       "runtimeMinutes": 114,
+      "status": "released",
+      "isInTheatres": true,
+      "id": 4
+    }
+  ],
+  "reviews": [
+    {
+      "movieId": 1,
+      "source": "Rotten Tomatoes",
+      "score": null,
+      "reviewCount": null,
+      "id": 1
+    },
+    {
+      "movieId": 2,
+      "source": "Rotten Tomatoes",
+      "score": 92,
+      "reviewCount": 236,
       "id": 2
     },
     {
-      "title": "Tim Burton's Corpse Bride",
-      "releaseDate": "2005-09-23",
-      "genreId": 3,
-      "rating": "PG",
-      "runtimeMinutes": 77,
+      "movieId": 3,
+      "source": "IMDB",
+      "score": 57,
+      "reviewCount": 92000,
       "id": 3
     },
     {
-      "title": "Bugonia",
-      "releaseDate": "2025-10-231",
-      "genreId": 2,
-      "rating": "R",
-      "runtimeMinutes": 120,
+      "movieId": 4,
+      "source": "IMDB",
+      "score": 63,
+      "reviewCount": 27000,
+      "id": 4
+    }
+  ],
+  "showtimes": [
+    {
+      "movieId": 1,
+      "theatreId": 1,
+      "date": "2025-11-11",
+      "times": [
+        "12:30 PM",
+        "3:00 PM",
+        "6:30 PM",
+        "9:00 PM"
+      ],
+      "availableSeats": 150,
+      "id": 1
+    },
+    {
+      "movieId": 2,
+      "theatreId": 3,
+      "date": "2025-11-11",
+      "times": [
+        "12:30 PM",
+        "3:00 PM",
+        "6:30 PM",
+        "9:00 PM"
+      ],
+      "availableSeats": 100,
+      "id": 2
+    },
+    {
+      "movieId": 3,
+      "theatreId": 3,
+      "date": "2025-11-11",
+      "times": [
+        "12:30 PM",
+        "3:00 PM",
+        "6:30 PM",
+        "9:00 PM"
+      ],
+      "availableSeats": 50,
+      "id": 3
+    },
+    {
+      "movieId": 4,
+      "theatreId": 4,
+      "date": "2025-11-11",
+      "times": [
+        "12:30 PM",
+        "3:00 PM",
+        "6:30 PM",
+        "9:00 PM"
+      ],
+      "availableSeats": 75,
+      "id": 4
+    }
+  ],
+  "theatres": [
+    {
+      "name": "Ciniplex Downtown",
+      "address": "123 Main St",
+      "city": "Montreal",
+      "province": "QC",
+      "postalCode": "H3A 1B2",
+      "phone": "123-456-7890",
+      "website": "https://cineplexdowntown.example.com",
+      "id": 1
+    },
+    {
+      "name": "Famous Players",
+      "address": "456 Wellington St",
+      "city": "Ottawa",
+      "province": "ON",
+      "postalCode": "K1A 0B1",
+      "phone": "123-456-7890",
+      "website": "https://famousplayers.example.com",
+      "id": 2
+    },
+    {
+      "name": "Landmark Cinemas",
+      "address": "789 Granville St",
+      "city": "Vancouver",
+      "province": "BC",
+      "postalCode": "V6C 1T2",
+      "phone": "123-456-7890",
+      "website": "https://landmarkcinemas.example.com",
+      "id": 3
+    },
+    {
+      "name": "Cinemark",
+      "address": "101 King St",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M5H 1A1",
+      "phone": "123-456-7890",
+      "website": "https://cinemark.example.com",
       "id": 4
     }
   ],
   "genres": [
     {
-      "name": "Action",
-      "description": "Fast-paced, special effects, and exciting sequences.",
+      "name": "family",
+      "description": "Content suitable for children and adults; typically animated or light-hearted live action.",
       "id": 1
     },
     {
-      "name": "Horror",
-      "description": "Atmospheric, dreadful, suspenseful, and shocking.",
+      "name": "fantasy",
+      "description": "Stories set in imaginary worlds or involving magical elements, mythical creatures, or supernatural forces.",
       "id": 2
     },
     {
-      "name": "Family",
-      "description": "Content suitable for children and adults; typically animated or light-hearted live action.",
+      "name": "action",
+      "description": "Fast-paced, high-energy films featuring physical stunts, chases, combat, and special effects.",
       "id": 3
     },
     {
-      "name": "Sci-Fi",
-      "description": "Stories centered around futuristic science, technology, and space exploration.",
+      "name": "sci-fi",
+      "description": "Stories centered around futuristic science, technology, space exploration, or parallel realities.",
       "id": 4
+    },
+    {
+      "name": "comedy",
+      "description": "Light-hearted and humorous stories designed to entertain and amuse, often through wit, satire, or playful characters.",
+      "id": 5
+    },
+    {
+      "name": "horror",
+      "description": "Atmospheric and suspenseful films that evoke fear or tension through dread, shock, or the supernatural.",
+      "id": 6
+    },
+    {
+      "name": "romance",
+      "description": "Emotionally driven stories that explore love, relationships, and human connection, often focusing on personal growth and heartfelt moments.",
+      "id": 7
+    },
+    {
+      "name": "thriller",
+      "description": "Tense, suspense-filled stories that keep audiences guessing.",
+      "id": 8
     }
   ]
 }
