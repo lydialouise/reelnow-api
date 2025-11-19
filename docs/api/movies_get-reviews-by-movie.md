@@ -2,7 +2,7 @@
 # markdownlint-disable
 # vale  off
 layout: default
-title: List reviews for a specific movie
+title: List all reviews for a specific movie
 parent: The `movie` resource
 nav_order: 
 has_children: false
@@ -28,3 +28,4 @@ last_updated: "2025-11-11"
 ---
 
 # List all reviews for a specific movie
+{: .no_toc }

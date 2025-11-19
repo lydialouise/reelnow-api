@@ -2,13 +2,13 @@
 # markdownlint-disable
 # vale  off
 layout: default
-title: List all genres
-parent: The `genre` resource
+title: List all theatres
+parent: The `theatre` resource
 nav_order: 
 has_children: false
 has_toc: true
 # tags used by AI files
-description: GET all `genre` resources in the database
+description: GET all `theatre` resources in the database
 tags:
     - api
 categories:
@@ -16,26 +16,26 @@ categories:
 ai_relevance: high
 importance: 7
 prerequisites:
-    - /api/genres
+    - /api/theatres
 related_pages: []
 examples: []
 api_endpoints: 
-    - GET /genres
+    - GET /theatres
 version: "v1.0"
 last_updated: "2025-11-11"
 # vale  on
 # markdownlint-enable
 ---
 
-# List all genres
+# List all theatres
 {: .no_toc }
 
 ```shell
-GET {base_url}/genres
+GET {base_url}/theatres
 # Replace {base_url} with the server address
 ```
 
-List all `genres` registered in the ReelNow database.
+List all `theatres` registered in the ReelNow database.
 
 1. TOC
 {:toc}
@@ -77,8 +77,8 @@ Here is an example cURL request and `200 OK` response.
 {: .no_toc }
 
 ```shell
-curl -X GET http://localhost:3000/genres 
-# List all genres
+curl -X GET http://localhost:3000/theatres 
+# List all theatres
 ```
 
 ### Example response
@@ -91,38 +91,43 @@ curl -X GET http://localhost:3000/genres
 
 ```js
 {
-    "name": "family",
-    "description": "Content suitable for children and adults; typically animated or light-hearted live action.",
+    "name": "Ciniplex Downtown",
+    "address": "123 Main St",
+    "city": "Montreal",
+    "province": "QC",
+    "postalCode": "H3A 1B2",
+    "phone": "123-456-7890",
+    "website": "https://cineplexdowntown.example.com",
     "id": 1
 },
 {
-    "name": "fantasy",
-    "description": "Stories set in imaginary worlds or involving magical elements, mythical creatures, or supernatural forces.",
+    "name": "Famous Players",
+    "address": "456 Wellington St",
+    "city": "Ottawa",
+    "province": "ON",
+    "postalCode": "K1A 0B1",
+    "phone": "123-456-7890",
+    "website": "https://famousplayers.example.com",
     "id": 2
 },
 {
-    "name": "action",
-    "description": "Fast-paced, high-energy films featuring physical stunts, chases, combat, and special effects.",
+    "name": "Landmark Cinemas",
+    "address": "789 Granville St",
+    "city": "Vancouver",
+    "province": "BC",
+    "postalCode": "V6C 1T2",
+    "phone": "123-456-7890",
+    "website": "https://landmarkcinemas.example.com",
     "id": 3
 },
 {
-    "name": "sci-fi",
-    "description": "Stories centered around futuristic science, technology, space exploration, or parallel realities.",
+    "name": "Cinemark",
+    "address": "101 King St",
+    "city": "Toronto",
+    "province": "ON",
+    "postalCode": "M5H 1A1",
+    "phone": "123-456-7890",
+    "website": "https://cinemark.example.com",
     "id": 4
-},
-{
-    "name": "comedy",
-    "description": "Light-hearted and humorous stories designed to entertain and amuse, often through wit, satire, or playful characters.",
-    "id": 5
-},
-{
-    "name": "horror",
-    "description": "Atmospheric and suspenseful films that evoke fear or tension through dread, shock, or the supernatural.",
-    "id": 6
-},
-{
-    "name": "romance",
-    "description": "Emotionally driven stories that explore love, relationships, and human connection, often focusing on personal growth and heartfelt moments.",
-    "id": 7
 }
 ```

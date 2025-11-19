@@ -8,4 +8,4 @@ has_toc: false
 
 # API reference
 
-From movies and genres to showtimes and theaters, explore ReelNow endpoints and start building your own blockbuster experience.
+From movies and genres to showtimes and theatres, explore ReelNow endpoints and start building your own blockbuster experience.

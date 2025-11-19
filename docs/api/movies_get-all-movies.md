@@ -28,6 +28,7 @@ last_updated: "2025-11-11"
 ---
 
 # List all movies
+{: .no_toc }
 
 ```shell
 GET {base_url}/movies
@@ -36,24 +37,27 @@ GET {base_url}/movies
 
 List all `movies` registered in the ReelNow database.
 
-## Requirements
+1. TOC
+{:toc}
 
-| Requirement    | Description          |
+## Permissions
+
+| Permission     | Description          |
 | -------------- | -------------------- |
 | Authentication | Access token         |
-| Permission     | Read                 |
+| Access         | Read                 |
 
-## Request parameters
+## Path parameters
 
 | Parameter      | Format | Description                                  |
 | -------------- | ------ | -------------------------------------------- |
 | `base_url`     | string | The server address                           |
 
-### Headers
+## Request header parameters
 
 _None_
 
-### Body
+## Request body parameters
 
 _None_
 
@@ -69,14 +73,16 @@ _None_
 
 Here is an example cURL request and `200 OK` response.
 
-### Example `cURL` request
+### Example request
+{: .no_toc }
 
 ```shell
 curl -X GET http://localhost:3000/movies 
 # List all movies
 ```
 
-### Example `200 OK` response
+### Example response
+{: .no_toc }
 
 {: .d-inline-block }
 
@@ -91,7 +97,7 @@ curl -X GET http://localhost:3000/movies
   "rating": "PG",
   "runtimeMinutes": 107,
   "status": "upcoming",
-  "isInTheaters": false,
+  "isIntheatres": false,
   "id": 1
 },
 {
@@ -101,7 +107,7 @@ curl -X GET http://localhost:3000/movies
   "rating": "PG-13",
   "runtimeMinutes": 228,
   "status": "re-released",
-  "isInTheaters": true,
+  "isIntheatres": true,
   "id": 2
 },
 {
@@ -111,7 +117,7 @@ curl -X GET http://localhost:3000/movies
   "rating": "PG-13",
   "runtimeMinutes": 90,
   "status": "archived",
-  "isInTheaters": false,
+  "isIntheatres": false,
   "id": 3
 },
 {
@@ -121,7 +127,7 @@ curl -X GET http://localhost:3000/movies
   "rating": "R",
   "runtimeMinutes": 114,
   "status": "released",
-  "isInTheaters": true,
+  "isIntheatres": true,
   "id": 4
 }
 ```

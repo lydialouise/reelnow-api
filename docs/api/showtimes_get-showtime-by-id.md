@@ -2,41 +2,41 @@
 # markdownlint-disable
 # vale  off
 layout: default
-title: Get details for a specific movie
-parent: The `movie` resource
+title: Get details for a specific showtime
+parent: The `showtime` resource
 nav_order: 
 has_children: false
 has_toc: true
 # tags used by AI files
-description: GET a specific `movie` resource in the database
-tags: 
+description: GET a specific `showtime` resource in the database
+tags:
     - api
 categories:
     - api-reference
 ai_relevance: high
-importance: 8
+importance: 7
 prerequisites:
-    - /api/movies
+    - /api/showtimes
 related_pages: []
 examples: []
 api_endpoints: 
-    - GET /movies/{id}
+    - GET /showtimes/{id}
 version: "v1.0"
 last_updated: "2025-11-11"
 # vale  on
 # markdownlint-enable
 ---
 
-# Get details for a specific movie
+# Get details for a specific showtime
 {: .no_toc }
 
 ```shell
-GET {base_url}/genres/{id}
+GET {base_url}/showtimes/{id}
 # Replace {base_url} with the server address
-# Replace {id} with the movie's unique ID
+# Replace {id} with the showtime's unique ID
 ```
 
-Get details for a specific `movie` registered in the ReelNow database.
+Get details for a specific `showtime` registered in the ReelNow database.
 
 1. TOC
 {:toc}
@@ -53,7 +53,7 @@ Get details for a specific `movie` registered in the ReelNow database.
 | Parameter      | Format | Description                                  |
 | -------------- | ------ | -------------------------------------------- |
 | `base_url`     | string | The server address                           |
-| `id`           | number | The movie's unique ID                        |
+| `id`           | number | The showtime's unique ID                        |
 
 ## Request header parameters
 
@@ -65,13 +65,13 @@ _None_
 
 ## Response status codes
 
-| Status code   | Description          |
-| ------------- | -------------------- |
-| 200           | Success              |
-| 404           | Resource ID not found   |
-| ECONNREFUSED  | Restart the service  |
+| Status code   | Description           |
+| ------------- | --------------------- |
+| 200           | Success               |
+| 404           | Resource ID not found |
+| ECONNREFUSED  | Restart the service   |
 
-## Example 
+## Example
 
 Here is an example cURL request and `200 OK` response.
 
@@ -79,8 +79,8 @@ Here is an example cURL request and `200 OK` response.
 {: .no_toc }
 
 ```shell
-curl -X GET http://localhost:3000/movies/1 
-# Get details for the movie with ID = 1
+curl -X GET http://localhost:3000/showtimes/1 
+# Get details for the showtime with ID = 1
 ```
 
 ### Example response
@@ -93,13 +93,16 @@ curl -X GET http://localhost:3000/movies/1
 
 ```js
 {
-  "title": "Zootopia 2",
-  "releaseDate": "2025-11-26",
-  "genreId": [1, 5],
-  "rating": "PG",
-  "runtimeMinutes": 107,
-  "status": "upcoming",
-  "isIntheatres": false,
-  "id": 1
+    "movieId": 1,
+    "theatreId": 1,
+    "date": "2025-11-11",
+    "times": [
+        "12:30 PM",
+        "3:00 PM",
+        "6:30 PM",
+        "9:00 PM"
+    ],
+    "availableSeats": 150,
+    "id": 1
 }
 ```

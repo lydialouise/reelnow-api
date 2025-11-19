@@ -2,13 +2,13 @@
 # markdownlint-disable
 # vale  off
 layout: default
-title: List all genres
-parent: The `genre` resource
+title: List all reviews
+parent: The `review` resource
 nav_order: 
 has_children: false
 has_toc: true
 # tags used by AI files
-description: GET all `genre` resources in the database
+description: GET all `review` resources in the database
 tags:
     - api
 categories:
@@ -16,26 +16,26 @@ categories:
 ai_relevance: high
 importance: 7
 prerequisites:
-    - /api/genres
+    - /api/reviews
 related_pages: []
 examples: []
 api_endpoints: 
-    - GET /genres
+    - GET /reviews
 version: "v1.0"
 last_updated: "2025-11-11"
 # vale  on
 # markdownlint-enable
 ---
 
-# List all genres
+# List all reviews
 {: .no_toc }
 
 ```shell
-GET {base_url}/genres
+GET {base_url}/reviews
 # Replace {base_url} with the server address
 ```
 
-List all `genres` registered in the ReelNow database.
+List all `reviews` registered in the ReelNow database.
 
 1. TOC
 {:toc}
@@ -77,8 +77,8 @@ Here is an example cURL request and `200 OK` response.
 {: .no_toc }
 
 ```shell
-curl -X GET http://localhost:3000/genres 
-# List all genres
+curl -X GET http://localhost:3000/reviews 
+# List all reviews
 ```
 
 ### Example response
@@ -91,38 +91,31 @@ curl -X GET http://localhost:3000/genres
 
 ```js
 {
-    "name": "family",
-    "description": "Content suitable for children and adults; typically animated or light-hearted live action.",
+    "movieId": 1,
+    "source": "Rotten Tomatoes",
+    "score": null,
+    "reviewCount": null,
     "id": 1
 },
 {
-    "name": "fantasy",
-    "description": "Stories set in imaginary worlds or involving magical elements, mythical creatures, or supernatural forces.",
+    "movieId": 2,
+    "source": "Rotten Tomatoes",
+    "score": 92,
+    "reviewCount": 236,
     "id": 2
 },
 {
-    "name": "action",
-    "description": "Fast-paced, high-energy films featuring physical stunts, chases, combat, and special effects.",
+    "movieId": 3,
+    "source": "IMDB",
+    "score": 57,
+    "reviewCount": 92000,
     "id": 3
 },
 {
-    "name": "sci-fi",
-    "description": "Stories centered around futuristic science, technology, space exploration, or parallel realities.",
+    "movieId": 4,
+    "source": "IMDB",
+    "score": 63,
+    "reviewCount": 27000,
     "id": 4
-},
-{
-    "name": "comedy",
-    "description": "Light-hearted and humorous stories designed to entertain and amuse, often through wit, satire, or playful characters.",
-    "id": 5
-},
-{
-    "name": "horror",
-    "description": "Atmospheric and suspenseful films that evoke fear or tension through dread, shock, or the supernatural.",
-    "id": 6
-},
-{
-    "name": "romance",
-    "description": "Emotionally driven stories that explore love, relationships, and human connection, often focusing on personal growth and heartfelt moments.",
-    "id": 7
 }
 ```

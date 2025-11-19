@@ -2,41 +2,42 @@
 # markdownlint-disable
 # vale  off
 layout: default
-title: Get details for a specific movie
+title: Update a movie
 parent: The `movie` resource
 nav_order: 
 has_children: false
 has_toc: true
 # tags used by AI files
-description: GET a specific `movie` resource in the database
-tags: 
+description: DELETE a `movie` resource in the database
+tags:
     - api
 categories:
     - api-reference
 ai_relevance: high
-importance: 8
+importance: 7
 prerequisites:
     - /api/movies
 related_pages: []
 examples: []
 api_endpoints: 
-    - GET /movies/{id}
+    - DELETE /movies/{id}
 version: "v1.0"
-last_updated: "2025-11-11"
+last_updated: "2025-11-20"
 # vale  on
 # markdownlint-enable
 ---
 
-# Get details for a specific movie
+# Update a movie
 {: .no_toc }
 
 ```shell
-GET {base_url}/genres/{id}
+DELETE {base_url}/movies/{id}
 # Replace {base_url} with the server address
-# Replace {id} with the movie's unique ID
 ```
 
-Get details for a specific `movie` registered in the ReelNow database.
+<!-- *NOTE* explain what server address is (localhost) in setting-up-your-environment page. -->
+
+Delete an existing `movie` in the ReelNow database.
 
 1. TOC
 {:toc}
@@ -44,14 +45,14 @@ Get details for a specific `movie` registered in the ReelNow database.
 ## Permissions
 
 | Permission     | Description          |
-| -------------- | -------------------- |
+| :------------- | :------------------- |
 | Authentication | Access token         |
-| Access         | Read                 |
+| Access         | Write                |
 
 ## Path parameters
 
 | Parameter      | Format | Description                                  |
-| -------------- | ------ | -------------------------------------------- |
+| :------------- | :----- | :------------------------------------------- |
 | `base_url`     | string | The server address                           |
 | `id`           | number | The movie's unique ID                        |
 
@@ -66,21 +67,28 @@ _None_
 ## Response status codes
 
 | Status code   | Description          |
-| ------------- | -------------------- |
+| :------------ | :------------------- |
 | 200           | Success              |
-| 404           | Resource ID not found   |
+| 404           | Resource not found   |
 | ECONNREFUSED  | Restart the service  |
 
-## Example 
+<!-- *NOTE* See Stripe docs for Error page. Consider setting up like that. -->
 
-Here is an example cURL request and `200 OK` response.
+## Example
+
+Here is an example `cURL` request and `200 OK` response.
 
 ### Example request
 {: .no_toc }
 
+{: .d-inline-block }
+
+cURL
+{: .label .label-purple }
+
 ```shell
-curl -X GET http://localhost:3000/movies/1 
-# Get details for the movie with ID = 1
+curl -X DELETE "http://localhost:3000/movies/1"
+# Delete the movie with ID = 1
 ```
 
 ### Example response
@@ -88,18 +96,9 @@ curl -X GET http://localhost:3000/movies/1
 
 {: .d-inline-block }
 
-200
+200 OK
 {: .label .label-green }
 
 ```js
-{
-  "title": "Zootopia 2",
-  "releaseDate": "2025-11-26",
-  "genreId": [1, 5],
-  "rating": "PG",
-  "runtimeMinutes": 107,
-  "status": "upcoming",
-  "isIntheatres": false,
-  "id": 1
-}
+{}
 ```

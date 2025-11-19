@@ -27,7 +27,7 @@ color_scheme: light
 #   !!! CHANGE THESE TO MATCH YOUR INSTALLATION OR ADAPTATION
 title: ReelNow API
 description: This is a mock API to simulate the REST interface of an
-  imaginary service. ReelNow is a service that tracks upcoming movie releases in theaters, 
+  imaginary service. ReelNow is a service that tracks upcoming movie releases in theatres, 
   including their associated genres, release dates, and ratings.
 #   !!! CHANGE THIS TO MATCH THE URL OF YOUR PUBLISHED DOCS
 url: https://lydialouise.github.io/reelnow-api

@@ -2,13 +2,13 @@
 # markdownlint-disable
 # vale  off
 layout: default
-title: Get details for a specific genre
+title: Update a genre
 parent: The `genre` resource
 nav_order: 
 has_children: false
 has_toc: true
 # tags used by AI files
-description: GET a specific `genre` resource in the database
+description: DELETE a `genre` resource in the database
 tags:
     - api
 categories:
@@ -20,23 +20,24 @@ prerequisites:
 related_pages: []
 examples: []
 api_endpoints: 
-    - GET /genres/{id}
+    - DELETE /genres/{id}
 version: "v1.0"
-last_updated: "2025-11-11"
+last_updated: "2025-11-20"
 # vale  on
 # markdownlint-enable
 ---
 
-# Get details for a specific genre
+# Update a genre
 {: .no_toc }
 
 ```shell
-GET {base_url}/genres/{id}
+DELETE {base_url}/genres/{id}
 # Replace {base_url} with the server address
-# Replace {id} with the genre's unique ID
 ```
 
-Get details for a specific `genre` registered in the ReelNow database.
+<!-- *NOTE* explain what server address is (localhost) in setting-up-your-environment page. -->
+
+Delete an existing `genre` in the ReelNow database.
 
 1. TOC
 {:toc}
@@ -44,14 +45,14 @@ Get details for a specific `genre` registered in the ReelNow database.
 ## Permissions
 
 | Permission     | Description          |
-| -------------- | -------------------- |
+| :------------- | :------------------- |
 | Authentication | Access token         |
-| Access         | Read                 |
+| Access         | Write                |
 
 ## Path parameters
 
 | Parameter      | Format | Description                                  |
-| -------------- | ------ | -------------------------------------------- |
+| :------------- | :----- | :------------------------------------------- |
 | `base_url`     | string | The server address                           |
 | `id`           | number | The genre's unique ID                        |
 
@@ -65,22 +66,29 @@ _None_
 
 ## Response status codes
 
-| Status code   | Description           |
-| ------------- | --------------------- |
-| 200           | Success               |
-| 404           | Resource ID not found |
-| ECONNREFUSED  | Restart the service   |
+| Status code   | Description          |
+| :------------ | :------------------- |
+| 200           | Success              |
+| 404           | Resource not found   |
+| ECONNREFUSED  | Restart the service  |
+
+<!-- *NOTE* See Stripe docs for Error page. Consider setting up like that. -->
 
 ## Example
 
-Here is an example cURL request and `200 OK` response.
+Here is an example `cURL` request and `200 OK` response.
 
 ### Example request
 {: .no_toc }
 
+{: .d-inline-block }
+
+cURL
+{: .label .label-purple }
+
 ```shell
-curl -X GET http://localhost:3000/genres/1 
-# Get details for the genre with ID = 1
+curl -X DELETE "http://localhost:3000/genres/1"
+# Delete the genre with ID = 1
 ```
 
 ### Example response
@@ -88,13 +96,9 @@ curl -X GET http://localhost:3000/genres/1
 
 {: .d-inline-block }
 
-200
+200 OK
 {: .label .label-green }
 
 ```js
-{
-    "name": "family",
-    "description": "Content suitable for children and adults; typically animated or light-hearted live action.",
-    "id": 1
-}
+{}
 ```
