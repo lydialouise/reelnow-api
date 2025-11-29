@@ -1,9 +1,29 @@
 {
   "movies": [
     {
+      "title": "Zootopia 2",
+      "releaseDate": "2025-11-26",
+      "genreId": [1, 5],
+      "rating": "PG",
+      "runtimeMinutes": 107,
+      "status": "released",
+      "isInTheatres": true,
+      "id": 1
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "releaseDate": "2001-12-28",
+      "genreId": [2, 3],
+      "rating": "PG-13",
+      "runtimeMinutes": 228,
+      "status": "re-released",
+      "isInTheatres": true,
+      "id": 2
+    },
+    {
       "title": "John Tucker Must Die",
       "releaseDate": "2006-07-28",
-      "genreId": 3,
+      "genreId": [3],
       "rating": "PG-13",
       "runtimeMinutes": 90,
       "status": "archived",
@@ -13,7 +33,7 @@
     {
       "title": "Black Phone 2",
       "releaseDate": "2025-10-17",
-      "genreId": 6,
+      "genreId": [6],
       "rating": "R",
       "runtimeMinutes": 114,
       "status": "released",
@@ -55,7 +75,7 @@
     {
       "movieId": 1,
       "theatreId": 1,
-      "date": "2025-11-11",
+      "date": "2025-12-15",
       "times": [
         "12:30 PM",
         "3:00 PM",
@@ -67,42 +87,16 @@
     },
     {
       "movieId": 2,
-      "theatreId": 3,
-      "date": "2025-11-11",
+      "theatreId": 2,
+      "date": "2025-12-31",
       "times": [
         "12:30 PM",
         "3:00 PM",
         "6:30 PM",
         "9:00 PM"
       ],
-      "availableSeats": 100,
+      "availableSeats": 150,
       "id": 2
-    },
-    {
-      "movieId": 3,
-      "theatreId": 3,
-      "date": "2025-11-11",
-      "times": [
-        "12:30 PM",
-        "3:00 PM",
-        "6:30 PM",
-        "9:00 PM"
-      ],
-      "availableSeats": 50,
-      "id": 3
-    },
-    {
-      "movieId": 4,
-      "theatreId": 4,
-      "date": "2025-11-11",
-      "times": [
-        "12:30 PM",
-        "3:00 PM",
-        "6:30 PM",
-        "9:00 PM"
-      ],
-      "availableSeats": 75,
-      "id": 4
     }
   ],
   "theatres": [
@@ -112,8 +106,8 @@
       "city": "Montreal",
       "province": "QC",
       "postalCode": "H3A 1B2",
-      "phone": "123-456-7890",
-      "website": "https://cineplexdowntown.example.com",
+      "phone": "987-654-3210",
+      "website": "https://cineplexmontreal.example.com",
       "id": 1
     },
     {

@@ -1,93 +1,65 @@
 ---
 # markdownlint-disable
 # vale  off
-layout: default
-title: Introduction
-parent: 
+layout: page
 nav_order: 1
-has_children: true
-has_toc: true
-# tags used by AI files
-description: Describes the ReelNow Service to a new user
-tags: 
-    - introduction
-categories: 
-    - introduction
-ai_relevance: high
-importance: 9
-prerequisites: []
-related_pages: 
-examples: []
-api_endpoints: []
-version: "v1.0"
-last_updated: "2025-11-12"
+title: About ReelNow
 # vale  on
 # markdownlint-enable
 ---
 
-# ReelNow API
+<img src="./assets/images/1-theatre.png" alt="ReelNow API: the smarter way to track movie releases" width="75%">
 
-**The smarter way to track movie releases.**
+# About ReelNow
 
-Stay in sync with the big screen using the ReelNow API. Track upcoming movie releases, including their associated genres, showtimes, theatres, and ratings. Build experiences that keep your movie fans informed, theatres up to date, and entertainment apps fresh.
+**The smarter way to track movie releases.** 🎥
 
-## Get started
+Stay in sync with the big screen using the ReelNow API. Reelnow helps developers track upcoming movie releases, including their associated genres, showtimes, theatres, and ratings. Build experiences that keep your movie fans informed, theatres up to date, and entertainment apps fresh.
 
-Start coding in minutes—no film degree required.
+## Getting started
 
-Get set up and learn how to track upcoming movies, find showtimes, and build entertainment-ready integrations with practical examples.
+Ready for a close-up? [Start coding in just 15 minutes](./getting-started.md)—no film degree required.
 
-### Prepare your environment
-  
-Ready for a close-up? Get up and running in 10 minutes or less.
+## Tutorials
 
-[Set up your environment](./api/setting-up-your-environment.md){: .btn .btn-outline }
+🎬 Direct your own scenes.
 
-### Tutorials
+[Get hands-on with step-by-step examples](./tutorials/index.md) that show you how to power your apps with real movie data. Learn how to track upcoming movies, find showtimes, and build entertainment-ready integrations with practical examples.
 
-Direct your own scenes. Get hands-on with step-by-step examples that show you how to power your app with real movie data.
+### Check movie details
 
-#### Check movie details
+🔍 What's behind the scenes?
 
-What's behind the scenes? Check `/movies{id}` to check movie details, like genre, rating, and reviews.
-Enhance your database with rich movie data to power personalized recommendations, build detailed movie pages, and ensure your app has accurate information.
+Check `/movies{id}` to discover movie details, like genre, rating, and reviews.
+Enhance your database with rich movie data to power personalized recommendations, build detailed movie pages, and ensure your apps have accurate information.
 
-[Check movie details](./api/tutorials/check-movie-details.md){: .btn .btn-outline }
+[Learn about movies](./tutorials/tutorials_check-movie-details.md)
 
-#### Find local showtimes
+### Find local showtimes
 
-Don’t miss the premiere. Find `/showtimes` to see what's playing at a theatre near you.
-Power local showtime listings, help users plan movie nights, and keep your app current with all screenings.
+🕓 Don’t miss the premiere!
 
-[Find local showtimes](./tutorials/get-local-showtimes.md){: .btn .btn-outline }
+Find `/showtimes` to help audiences see what's playing at nearby theatres.
+Power local showtime listings, help viewers plan movie nights, and keep your apps current with all screenings.
 
-#### Get theatre information
+[Learn about showtimes](./tutorials/tutorials_find-local-showtimes.md)
 
-Scout your cinema. Get location and contact information for all theatres to guide audiences to the perfect screen.
+### Update theatre information
 
-[Get theatre info](./api/tutorials/get-theatre-info.md){: .btn .btn-outline }
+📍 Scout your cinema.
 
-#### Filter movies by audience
+Update location and contact information for all theatres to guide audiences to the perfect screen.
 
-Know your audience. Filter by genre and rating to find age-appropriate films for your viewers.
+ [Learn about updating](./tutorials/tutorials_update-theatre-info.md)
 
-[Filter movies by audience](./api/tutorials/filter-movies-by-audience.md){: .btn .btn-outline }
+### Filter movies by audience
+
+👪 Keep it G-rated.
+
+Filter by genre and rating to find age-appropriate films for all audiences.
+
+[Learn about filtering](./tutorials/tutorials_filter-movies-by-audience.md)
 
 ## Explore the API reference
 
-Already familiar with the basics? Explore detailed endpoints and schema definitions in the [API Reference →](./api/resources.md).
-
----
-
-For inspiration on how others are using ReelNow to power movie dashboards, ticketing apps, and entertainment sites, visit the **developer blog→** and **community forum→**.
-
----
-
-From advertising upcoming releases to integrating showtimes with theatre websites, **explore case studies→** to discover how developers use ReelNow to keep movie lovers informed.
-
-## Get support
-
-Get help with questions and troubleshooting.
-
-[FAQ](./api/faq.md){: .btn .btn-outline }  
-[Troubleshooting](./api/troubleshooting.md){: .btn .btn-outline }
+Already know the basics? Explore detailed endpoints and API calls with the [API Reference](./api-reference/index.md).

@@ -26,9 +26,7 @@ color_scheme: light
 #     and the description of your the documentation.
 #   !!! CHANGE THESE TO MATCH YOUR INSTALLATION OR ADAPTATION
 title: ReelNow API
-description: This is a mock API to simulate the REST interface of an
-  imaginary service. ReelNow is a service that tracks upcoming movie releases in theatres, 
-  including their associated genres, release dates, and ratings.
+description: Reelnow is a mock RESTful API that simulates tracking upcoming movie releases, including their genres, release dates, and ratings.
 #   !!! CHANGE THIS TO MATCH THE URL OF YOUR PUBLISHED DOCS
 url: https://lydialouise.github.io/reelnow-api
 baseurl: "/reelnow-api"
@@ -36,7 +34,7 @@ baseurl: "/reelnow-api"
 #   +++ REMOVE IF YOU DON'T WANT THE AUX LINKS AT THE TOP OF THE PAGE
 #       OR ADD MORE LINKS AS SUPPORTED BY THE THEME
 aux_links: 
-  To-Do Service repo: https://github.com/uwc2-apidoc/to-do-service-au25
+  Open in GitHub: https://github.com/lydialouise/reelnow-api
 #
 #   Configures how each topic URL is formatted
 #   +++ YOU CAN CHANGE THIS, BUT YOU PROBABLY DO NOT WANT TO
@@ -160,5 +158,3 @@ footer_content: "Copyright &copy; 2025 lydialouise. Distributed by an <a href=\"
 #       Specifies whether to display the default ToC of child topics or not.
 #       A value of false supresses the default ToC.    
 #       See also https://just-the-docs.com/docs/navigation/children/
-#
-#
