@@ -26,43 +26,42 @@ Register a new `theatre` in the ReelNow database.
 
 ## Permissions
 
-| Permission     | Description          |
-| :------------- | :------------------- |
-| Authentication | Access token         |
-| Access         | Write                |
+| Permission     | Description  |
+| :------------- | :----------- |
+| Authentication | Access token |
+| Access         | Write        |
 
 ## Path parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `base_url`     | string | The server address                           |
+| Parameter  | Format | Description        |
+| :--------- | :----- | :----------------- |
+| `base_url` | string | The server address |
 
 ## Request header parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `Content-Type` | string | The parameter content type                   |
+| Parameter      | Format | Description                |
+| :------------- | :----- | :------------------------- |
+| `Content-Type` | string | The parameter content type |
 
 ## Request body parameters
 
-| Parameter     | Format  | Description                                               |
-| :------------ | :------ | :-------------------------------------------------------- |
-| `name`        | string  | The theatre's name                                        |
-| `address`     | string  | The theatre's street address                              |
-| `city`        | string  | The city where the theatre is located                     |
-| `state`       | string  | The province where the theatre is located                 |
-| `postalCode`  | string  | The theatre's postal code                                 |
-| `phone`       | string  | The theatre's phone number                                |
-| `website`     | string  | The theatre's website URL                                 |
-| `id`          | number  | The theatre’s unique ID                                   |
+| Parameter    | Format | Description                               |
+| :----------- | :----- | :---------------------------------------- |
+| `name`       | string | The theatre's name                        |
+| `address`    | string | The theatre's street address              |
+| `city`       | string | The city where the theatre is located     |
+| `state`      | string | The province where the theatre is located |
+| `postalCode` | string | The theatre's postal code                 |
+| `phone`      | string | The theatre's phone number                |
+| `website`    | string | The theatre's website URL                 |
+| `id`         | number | The theatre’s unique ID                   |
 
 ## Response status codes
 
-| Status code   | Description          |
-| :------------ | :------------------- |
-| 200           | Success              |
-| 404           | Resource not found   |
-| ECONNREFUSED  | Restart the service  |
+| Status code  | Description                   |
+| ------------ | ----------------------------- |
+| 201          | Resource successfully updated |
+| ECONNREFUSED | Restart the service           |
 
 <!-- *NOTE* Consider a seperate error page (see Stripe docs) -->
 

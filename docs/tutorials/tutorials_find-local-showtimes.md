@@ -100,7 +100,6 @@ This returns all showtimes for the movie with `"id": 1`:
   "availableSeats": 150,
   "id": 1
 }
-
 ```
 
 ## Step 3: Understand movie properties
@@ -119,7 +118,7 @@ Observe the JSON response for the movie with `"id": 1`:
 
 ## Next steps
 
-Now that you know how to check movie details, try experimenting:
+Now that you know how to retrieve details for a specific resource using query parameters, try experimenting:
 
 * Find out which movies are playing at the theatre with `"id": 1` on New Year's Eve.
 * Find the number of `availableSeats` for Zootopia 2 on January 15, 2026.

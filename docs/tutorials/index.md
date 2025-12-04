@@ -12,4 +12,4 @@ title: Tutorials
 
 # Tutorials
 
-Direct your own scenes. Get hands-on with step-by-step examples that show you how to power your apps with real movie data.
+Direct your own scenes. 🎬 Get hands-on with step-by-step examples that show you how to power your apps with real movie data.

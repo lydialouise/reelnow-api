@@ -27,38 +27,38 @@ Update an existing `genre` in the ReelNow database.
 
 ## Permissions
 
-| Permission     | Description          |
-| :------------- | :------------------- |
-| Authentication | Access token         |
-| Access         | Write                |
+| Permission     | Description  |
+| :------------- | :----------- |
+| Authentication | Access token |
+| Access         | Write        |
 
 ## Path parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `base_url`     | string | The server address                           |
-| `id`           | number | The genre's unique ID                        |
+| Parameter  | Format | Description           |
+| :--------- | :----- | :-------------------- |
+| `base_url` | string | The server address    |
+| `id`       | number | The genre's unique ID |
 
 ## Request header parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `Content-Type` | string | The parameter content type                   |
+| Parameter      | Format | Description                |
+| :------------- | :----- | :------------------------- |
+| `Content-Type` | string | The parameter content type |
 
 ## Request body parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `name`         | string | The name of the genre                        |
-| `description`  | string | A short description of the genre             |
+| Parameter     | Format | Description                      |
+| :------------ | :----- | :------------------------------- |
+| `name`        | string | The name of the genre            |
+| `description` | string | A short description of the genre |
 
 ## Response status codes
 
-| Status code   | Description          |
-| :------------ | :------------------- |
-| 200           | Success              |
-| 404           | Resource not found   |
-| ECONNREFUSED  | Restart the service  |
+| Status code  | Description                   |
+| ------------ | ----------------------------- |
+| 200          | Resource successfully updated |
+| 404          | Resource ID not found         |
+| ECONNREFUSED | Restart the service           |
 
 <!-- *NOTE* Consider a seperate error page (see Stripe docs) -->
 

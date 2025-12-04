@@ -26,43 +26,42 @@ Register a new `movie` in the ReelNow database.
 
 ## Permissions
 
-| Permission     | Description          |
-| :------------- | :------------------- |
-| Authentication | Access token         |
-| Access         | Write                |
+| Permission     | Description  |
+| :------------- | :----------- |
+| Authentication | Access token |
+| Access         | Write        |
 
 ## Path parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `base_url`     | string | The server address                           |
+| Parameter  | Format | Description        |
+| :--------- | :----- | :----------------- |
+| `base_url` | string | The server address |
 
 ## Request header parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `Content-Type` | string | The parameter content type                   |
+| Parameter      | Format | Description                |
+| :------------- | :----- | :------------------------- |
+| `Content-Type` | string | The parameter content type |
 
 ## Request body parameters
 
-| Parameter        | Format  | Description                                          |
-| :--------------- | :------ | :--------------------------------------------------- |
-| `title`          | string  | The name of the movie                                |
-| `releaseDate`    | string  | The movie theatre release date                       |
-| `genreId`        | number  | The genre's unique ID                                |
-| `rating`         | string  | The Motion Picture Association film rating           |
-| `runtimeMinutes` | number  | The length of the movie in minutes                   |
-| `status`         | string  | The release status                                   |
-| `isInTheatres`   | boolean | The flag showing whether the movie is in theatres    |
-| `id`             | number  | The movie's unique ID                                |
+| Parameter        | Format  | Description                                       |
+| :--------------- | :------ | :------------------------------------------------ |
+| `title`          | string  | The name of the movie                             |
+| `releaseDate`    | string  | The movie theatre release date                    |
+| `genreId`        | number  | The genre's unique ID                             |
+| `rating`         | string  | The Motion Picture Association film rating        |
+| `runtimeMinutes` | number  | The length of the movie in minutes                |
+| `status`         | string  | The release status                                |
+| `isInTheatres`   | boolean | The flag showing whether the movie is in theatres |
+| `id`             | number  | The movie's unique ID                             |
 
 ## Response status codes
 
-| Status code   | Description          |
-| :------------ | :------------------- |
-| 200           | Success              |
-| 404           | Resource not found   |
-| ECONNREFUSED  | Restart the service  |
+| Status code  | Description                   |
+| ------------ | ----------------------------- |
+| 201          | Resource successfully updated |
+| ECONNREFUSED | Restart the service           |
 
 <!-- *NOTE* Consider a seperate error page (see Stripe docs) -->
 

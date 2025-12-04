@@ -101,7 +101,6 @@ curl -X PATCH "http://localhost:3000/theatres/1" \
     "website": "https://cineplexmontreal.example.com"
   }'
 # Update details for the theatre with "id": 1
-
 ```
 
 This updates the phone number and website for the theatre with `"id": 1`. Other information remains unchanged:
@@ -135,7 +134,7 @@ Observe the JSON response for the movie with `"id": 2`:
 
 ## Next steps
 
-Now that you know how to update theatre details, try experimenting:
+Now that you know how to update details for a specific resource, try experimenting:
 
 * Update any address properties to reflect a new location.
 * Check your updates using the `GET /theatres/{id}` method.

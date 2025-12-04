@@ -27,41 +27,41 @@ Update an existing `showtime` in the ReelNow database.
 
 ## Permissions
 
-| Permission     | Description          |
-| :------------- | :------------------- |
-| Authentication | Access token         |
-| Access         | Write                |
+| Permission     | Description  |
+| :------------- | :----------- |
+| Authentication | Access token |
+| Access         | Write        |
 
 ## Path parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `base_url`     | string | The server address                           |
-| `id`           | number | The showtime's unique ID                     |
+| Parameter  | Format | Description              |
+| :--------- | :----- | :----------------------- |
+| `base_url` | string | The server address       |
+| `id`       | number | The showtime's unique ID |
 
 ## Request header parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `Content-Type` | string | The parameter content type                   |
+| Parameter      | Format | Description                |
+| :------------- | :----- | :------------------------- |
+| `Content-Type` | string | The parameter content type |
 
 ## Request body parameters
 
-| Parameter | Format | Description |
-| :--- | :--- | :--- |
-| `movieId` | number | The movie's unique ID |
-| `theatreId` | number | The theatre's unique ID |
-| `date` | string | The date of the showings in ISO 8601 format |
-| `times` | array | A list of showtimes on the date in 12-hour clock format |
+| Parameter        | Format | Description                                                        |
+| :--------------- | :----- | :----------------------------------------------------------------- |
+| `movieId`        | number | The movie's unique ID                                              |
+| `theatreId`      | number | The theatre's unique ID                                            |
+| `date`           | string | The date of the showings in ISO 8601 format                        |
+| `times`          | array  | A list of showtimes on the date in 12-hour clock format            |
 | `availableSeats` | number | The number of seats currently available for booking at the theatre |
 
 ## Response status codes
 
-| Status code   | Description          |
-| :------------ | :------------------- |
-| 200           | Success              |
-| 404           | Resource not found   |
-| ECONNREFUSED  | Restart the service  |
+| Status code  | Description                   |
+| ------------ | ----------------------------- |
+| 200          | Resource successfully updated |
+| 404          | Resource ID not found         |
+| ECONNREFUSED | Restart the service           |
 
 <!-- *NOTE* Consider a seperate error page (see Stripe docs) -->
 

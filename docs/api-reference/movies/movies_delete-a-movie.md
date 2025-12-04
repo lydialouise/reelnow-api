@@ -26,17 +26,17 @@ Delete an existing `movie` in the ReelNow database.
 
 ## Permissions
 
-| Permission     | Description          |
-| :------------- | :------------------- |
-| Authentication | Access token         |
-| Access         | Write                |
+| Permission     | Description  |
+| :------------- | :----------- |
+| Authentication | Access token |
+| Access         | Write        |
 
 ## Path parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `base_url`     | string | The server address                           |
-| `id`           | number | The movie's unique ID                        |
+| Parameter  | Format | Description           |
+| :--------- | :----- | :-------------------- |
+| `base_url` | string | The server address    |
+| `id`       | number | The movie's unique ID |
 
 ## Request header parameters
 
@@ -48,11 +48,11 @@ _None_
 
 ## Response status codes
 
-| Status code   | Description          |
-| :------------ | :------------------- |
-| 200           | Success              |
-| 404           | Resource not found   |
-| ECONNREFUSED  | Restart the service  |
+| Status code  | Description                   |
+| :----------- | :---------------------------- |
+| 200          | Resource successfully deleted |
+| 404          | Resource ID not found         |
+| ECONNREFUSED | Restart the service           |
 
 <!-- *NOTE* Consider a seperate error page (see Stripe docs) -->
 

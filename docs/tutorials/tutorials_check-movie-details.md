@@ -9,8 +9,6 @@ title: Check movie details
 # markdownlint-enable
 ---
 
-Tutorials
-
 # Check movie details
 {: .no_toc }
 
@@ -119,7 +117,7 @@ This returns details for the movie with `"id": 2`:
 
 ## Step 3: Understand movie properties
 
-To understand what each property means, check the description under [The `movies` resource properties](./movies.md#properties).
+To understand what each property means, check the description under [The `movie` resource properties](../api-reference/movies/movies.md#properties).
 
 Based on these properties:
 
@@ -133,7 +131,7 @@ Observe the JSON response for the movie with `"id": 2`:
 
 ## Next steps
 
-Now that you know how to check movie details, try experimenting:
+Now that you know how to retrieve details for a specific resource, try experimenting:
 
 * Find which genres the movie The Lord of the Rings: The Fellowship of the Ring belongs to.
 * Check when Zootopia 2 will be released in theatres.
@@ -142,5 +140,5 @@ Now that you know how to check movie details, try experimenting:
 ## Further reading
 
 * [The `movie` resource](../api-reference/movies/movies.md)
-* [MPA film rating](https://www.motionpictures.org/film-ratings/)
+* [MPA film ratings](https://www.motionpictures.org/film-ratings/)
 * [Tutorials](index.md)

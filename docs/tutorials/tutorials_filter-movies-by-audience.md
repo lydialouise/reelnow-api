@@ -12,7 +12,7 @@ title: Filter movies by audience
 # Filter movies by audience
 {: .no_toc }
 
-Filter by genre and rating to find age-appropriate films for your viewers. 👪 Combine multiple query parameters to filter movies for specific audiences so you can build age-appropriate movie listings and curated content experiences.
+Filter by genre and rating to find age-appropriate films for your viewers. 👪 Combine multiple query parameters to filter movies for specific audiences, customize movie listings, and curate content experiences.
 
 You'll learn how to:
 
@@ -94,14 +94,21 @@ Next, use the `genreId` and `rating` query parameters to find movies with genres
 
 For this purpose, you'll:
 
-* Exclude movies with `"genreId": 6` (horror)
-* Include only movies with `"rating": ["G", "PG"]` (General Audiences, Parental Guidance Suggested)
+* Include movies with `"genreId": 1` (family)
+* Include movies with `"rating": ["G", "PG"]` (General Audiences, Parental Guidance Suggested)
+
+Use the `_like` query operator to match a substring inside a field type that may contain multiple values, like an array.
+
+| Field type | Sample field        | Query example     | Description                                        |
+| ---------- | ------------------- | ----------------- | -------------------------------------------------- |
+| Scalar     | `"rating": "PG"`    | `?rating=PG`      | Matches exactly `"PG"`                             |
+| Array      | `"genreId": [1, 5]` | `?genreId_like=1` | Matches any movie where `"1"` appears in the array |
 
 In your terminal, run the following command:
 
 ```shell
-curl -X GET "http://localhost:3000/movies?genreId=1&genreId=2&genreId=3genreId=4&genreId=5&&genreId=7&genreId=8&rating=G&rating=PG"
-# Get movies with "genreId": [1, 2, 3, 4, 5, 7, 8] and "rating"=["G", "PG"]
+curl -X GET "http://localhost:3000/movies?genreId_like=1&rating_like=G&rating_like=PG"
+# Get movies with "genreId": 1 and "rating"="G" or "rating"="PG"
 ```
 
 This returns all non-horror movies intended for general audiences:
@@ -121,7 +128,7 @@ This returns all non-horror movies intended for general audiences:
 
 ## Next steps
 
-Now that you understand filtering with query parameters, try experimenting:
+Now that you know how to filter using query parameters and operators, try experimenting:
 
 * Find all comedies that are appropriate for teenagers.
 * Discover which R-rated movies are currently in theatres.
