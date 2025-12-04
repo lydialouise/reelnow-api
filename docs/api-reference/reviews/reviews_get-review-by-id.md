@@ -28,17 +28,17 @@ Get details for a specific `review` registered in the ReelNow database.
 
 ## Permissions
 
-| Permission     | Description          |
-| :------------- | :------------------- |
-| Authentication | Access token         |
-| Access         | Read                 |
+| Permission     | Description  |
+| :------------- | :----------- |
+| Authentication | Access token |
+| Access         | Read         |
 
 ## Path parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `base_url`     | string | The server address                           |
-| `id`           | number | The review's unique ID                        |
+| Parameter  | Format | Description            |
+| :--------- | :----- | :--------------------- |
+| `base_url` | string | The server address     |
+| `id`       | number | The review's unique ID |
 
 ## Request header parameters
 
@@ -50,11 +50,11 @@ _None_
 
 ## Response status codes
 
-| Status code   | Description           |
-| :------------ | :-------------------- |
-| 200           | Success               |
-| 404           | Resource ID not found |
-| ECONNREFUSED  | Restart the service   |
+| Status code  | Description                    |
+| :----------- | :----------------------------- |
+| 200          | Resource successfully returned |
+| 404          | Resource ID not found          |
+| ECONNREFUSED | Restart the service            |
 
 ## Example
 

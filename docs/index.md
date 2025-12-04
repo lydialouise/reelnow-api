@@ -8,7 +8,7 @@ title: About ReelNow
 # markdownlint-enable
 ---
 
-<img src="./assets/images/1-theatre.png" alt="ReelNow API: the smarter way to track movie releases" width="75%">
+<img src="./assets/images/movie-theatre.png" alt="Illustration of a movie theatre" width="75%">
 
 # About ReelNow
 

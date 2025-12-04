@@ -22,7 +22,7 @@ Before using ReelNow, you'll need:
 
 * A [GitHub](https://github.com/) account
 * Command-line [Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
-* A fork and clone of the [reelnow-api repository](https://github.com/lydialouise/reelnow-api)
+* A [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) of the [reelnow-api repository](https://github.com/lydialouise/reelnow-api)
 * The [json-server](https://www.npmjs.com/package/json-server) app version 0.17.4 or higher
 * A current or LTS version of [node.js](https://nodejs.org/en/download)
 
@@ -39,14 +39,9 @@ cd <your-github-workspace>/reelnow-api/api
 json-server -w reelnow-db-source.json
 ```
 
-Confirm that the JSON server output matches the following:
+Confirm that the JSON server returns the following resources and base URL:
 
 ```shell
-\{^_^}/ hi!
-
-Loading reelnow-db-source.json
-Done
-
 Resources
 http://localhost:3000/movies
 http://localhost:3000/reviews
@@ -66,7 +61,7 @@ To test API calls locally, replace `{base_url}` with `http://localhost:3000`.
 
 ## Step 4: Make your first API call
 
-In a terminal, run the following command:
+In a new terminal, run the following command:
 
 ```shell
 curl -X GET http://localhost:3000/genres/1
@@ -85,7 +80,7 @@ This returns a JSON object for the genre with `"id": 1`:
 
 ## Next steps
 
-Now that you’ve made your first API call, you're ready to get started with [Tutorials](./tutorials.md).
+Now that you’ve made your first API call, you're ready to get started with [Tutorials](./tutorials/index.md).
 
 ## Further reading
 

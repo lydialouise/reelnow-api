@@ -102,6 +102,9 @@ liquid:
    error_mode: strict
    strict_filters: true
 
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/assets/images/favicon.ico"
+
 # Footer content
 # appears at the bottom of every page's main content
 #

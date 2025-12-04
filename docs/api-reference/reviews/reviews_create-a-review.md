@@ -26,40 +26,39 @@ Register a new `review` in the ReelNow database.
 
 ## Permissions
 
-| Permission     | Description          |
-| :------------- | :------------------- |
-| Authentication | Access token         |
-| Access         | Write                |
+| Permission     | Description  |
+| :------------- | :----------- |
+| Authentication | Access token |
+| Access         | Write        |
 
 ## Path parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `base_url`     | string | The server address                           |
+| Parameter  | Format | Description        |
+| :--------- | :----- | :----------------- |
+| `base_url` | string | The server address |
 
 ## Request header parameters
 
-| Parameter      | Format | Description                                  |
-| :------------- | :----- | :------------------------------------------- |
-| `Content-Type` | string | The parameter content type                   |
+| Parameter      | Format | Description                |
+| :------------- | :----- | :------------------------- |
+| `Content-Type` | string | The parameter content type |
 
 ## Request body parameters
 
-| Parameter     | Format | Description                                                              |
-| :------------ | :----- | :----------------------------------------------------------------------- |
-| `movieId`     | number | The movie's unique ID                                                    |
-| `source`      | string | The platform providing the rating                                        |
+| Parameter     | Format | Description                                                                  |
+| :------------ | :----- | :--------------------------------------------------------------------------- |
+| `movieId`     | number | The movie's unique ID                                                        |
+| `source`      | string | The platform providing the rating                                            |
 | `score`       | number | The review score calculated on a scale of 1–100, where 100 is highest rating |
-| `reviewCount` | number | The total number of reviews contributing to the score                    |
-| `id`          | number | The review's unique ID                                                   |
+| `reviewCount` | number | The total number of reviews contributing to the score                        |
+| `id`          | number | The review's unique ID                                                       |
 
 ## Response status codes
 
-| Status code   | Description          |
-| :------------ | :------------------- |
-| 200           | Success              |
-| 404           | Resource not found   |
-| ECONNREFUSED  | Restart the service  |
+| Status code  | Description                   |
+| ------------ | ----------------------------- |
+| 201          | Resource successfully updated |
+| ECONNREFUSED | Restart the service           |
 
 <!-- *NOTE* Consider a seperate error page (see Stripe docs) -->
 
