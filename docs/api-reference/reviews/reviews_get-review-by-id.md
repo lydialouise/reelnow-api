@@ -63,6 +63,11 @@ Here is an example `cURL` request and `200 OK` response.
 ### Example request
 {: .no_toc }
 
+{: .d-inline-block }
+
+cURL
+{: .label .label-purple }
+
 ```shell
 curl -X GET http://localhost:3000/reviews/1 
 # Get details for the review with "id": 1
