@@ -56,7 +56,7 @@ Update an existing `review` in the ReelNow database.
 ## Response status codes
 
 | Status code  | Description                   |
-| ------------ | ----------------------------- |
+| :----------- | :---------------------------- |
 | 200          | Resource successfully updated |
 | 404          | Resource ID not found         |
 | ECONNREFUSED | Restart the service           |

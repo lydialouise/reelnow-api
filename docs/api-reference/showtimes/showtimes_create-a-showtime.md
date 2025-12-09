@@ -57,7 +57,7 @@ Register a new `showtime` in the ReelNow database.
 ## Response status codes
 
 | Status code  | Description                   |
-| ------------ | ----------------------------- |
+| :----------- | :---------------------------- |
 | 201          | Resource successfully updated |
 | ECONNREFUSED | Restart the service           |
 
