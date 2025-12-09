@@ -49,7 +49,7 @@ _None_
 ## Response status codes
 
 | Status code  | Description                |
-| ------------ | -------------------------- |
+| :----------- | :------------------------- |
 | 200          | List successfully returned |
 | ECONNREFUSED | Restart the service        |
 

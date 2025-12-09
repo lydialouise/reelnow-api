@@ -100,7 +100,7 @@ For this purpose, you'll:
 Use the `_like` query operator to match a substring inside a field type that may contain multiple values, like an array.
 
 | Field type | Sample field        | Query example     | Description                                        |
-| ---------- | ------------------- | ----------------- | -------------------------------------------------- |
+| :--------- | :------------------ | :---------------- | :------------------------------------------------- |
 | Scalar     | `"rating": "PG"`    | `?rating=PG`      | Matches exactly `"PG"`                             |
 | Array      | `"genreId": [1, 5]` | `?genreId_like=1` | Matches any movie where `"1"` appears in the array |
 
