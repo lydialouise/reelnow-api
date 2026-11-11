@@ -19,6 +19,8 @@ remote_theme: just-the-docs/just-the-docs
 #   Described in: https://just-the-docs.com/docs/configuration/#color-scheme
 color_scheme: light
 #
+# This adds tracking in Google Analytics 4:
+ga_tracking: G-5M970899JP
 # These values describe aspects of the final documentation. How they are
 #   applied depends on the theme that is in use.
 #
